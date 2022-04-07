@@ -12,18 +12,21 @@ public abstract class BankAccount {
 
     }
     public BankAccount(double balance, double interestRate, double monthlyServiceCharge){
-
+        this.balance = balance;
+        this.interestRate = interestRate;
+        this.monthlyServiceCharge = monthlyServiceCharge;
     }
 
     public void deposit(double amount){
-
+        balance += amount;
     }
 
     public void withdraw(double amount){
-
+        balance -= amount;
     }
 
     private void calcInterest() {
+        
     }
 
     public void setMonthlyServiceCharge(){
